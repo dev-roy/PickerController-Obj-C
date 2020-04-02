@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-Rd-7Xh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="651"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWZ-l9-u7i">
+                                <rect key="frame" x="162.5" y="762" width="89" height="30"/>
+                                <state key="normal" title="LOAD IMAGE"/>
+                                <connections>
+                                    <action selector="loadImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kc7-tE-taY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IWZ-l9-u7i" secondAttribute="bottom" constant="70" id="LMB-tj-lcS"/>
+                            <constraint firstAttribute="trailing" secondItem="fdL-Rd-7Xh" secondAttribute="trailing" id="Ngo-IN-Afy"/>
+                            <constraint firstItem="fdL-Rd-7Xh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RP7-E2-zwR"/>
+                            <constraint firstItem="IWZ-l9-u7i" firstAttribute="top" secondItem="fdL-Rd-7Xh" secondAttribute="bottom" constant="67" id="Zvy-Ho-I6s"/>
+                            <constraint firstItem="IWZ-l9-u7i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="buM-Re-3yw"/>
+                            <constraint firstItem="fdL-Rd-7Xh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xWj-h9-kDk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="fdL-Rd-7Xh" id="vEW-h0-tQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </scene>
+    </scenes>
+</document>
